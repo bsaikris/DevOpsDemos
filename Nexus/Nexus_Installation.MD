@@ -33,6 +33,10 @@ Add nexus as a service at boot time
 ```sh
 sudo ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
 ```
+cd /etc/init.d
+sudo update-rc.d nexus defaults
+sudo service nexus start
+
 Login as a nexus user and start service
 ```sh
 su - nexus
